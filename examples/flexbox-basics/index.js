@@ -15,6 +15,7 @@ export default class FlexboxBasics extends React.Component {
     return (
       <View style={styles.container}>
         <Link onPress={() => navigate("FlexDirection")}>FlexDirection</Link>
+        <Link onPress={() => navigate("JustifyContent")}>JustifyContent</Link>
         <Link onPress={() => navigate("Centering")}>Centering</Link>
       </View>
     );

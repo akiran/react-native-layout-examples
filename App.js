@@ -2,11 +2,13 @@ import { createStackNavigator, createAppContainer, createDrawerNavigator } from 
 import FlexboxBasicsLinks from "./examples/flexbox-basics";
 import Centering from "./examples/flexbox-basics/Centering";
 import FlexDirection from "./examples/flexbox-basics/FlexDirection";
+import JustifyContent from "./examples/flexbox-basics/JustifyContent";
 
 const FlexboxBasicsStack = createStackNavigator(
   {
     FlexboxBasics: FlexboxBasicsLinks,
     FlexDirection,
+    JustifyContent,
     Centering
   },
   {
