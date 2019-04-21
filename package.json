@@ -13,7 +13,13 @@
     "react-navigation": "^3.8.1"
   },
   "devDependencies": {
-    "babel-preset-expo": "^5.0.0"
+    "babel-preset-expo": "^5.0.0",
+    "eslint": "^5.16.0",
+    "eslint-config-universe": "^1.0.7",
+    "prettier": "^1.17.0"
+  },
+  "eslintConfig": {
+    "extends": "universe/native"
   },
   "private": true
 }

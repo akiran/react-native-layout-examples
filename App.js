@@ -1,12 +1,19 @@
-import React from "react";
-import { StyleSheet, View } from "react-native";
-import {
-  createStackNavigator,
-  createAppContainer,
-  createDrawerNavigator
-} from "react-navigation";
-import Home from "./examples";
-import FlexboxBasics from "./examples/flexbox-basics";
+import { createStackNavigator, createAppContainer, createDrawerNavigator } from "react-navigation";
+import FlexboxBasicsLinks from "./examples/flexbox-basics";
+import Centering from "./examples/flexbox-basics/Centering";
+import FlexDirection from "./examples/flexbox-basics/FlexDirection";
+
+const FlexboxBasicsStack = createStackNavigator(
+  {
+    FlexboxBasics: FlexboxBasicsLinks,
+    FlexDirection,
+    Centering
+  },
+  {
+    initialRouteName: "FlexboxBasics"
+  }
+);
+const FlexboxBasics = createAppContainer(FlexboxBasicsStack);
 
 const AppNavigator = createDrawerNavigator(
   {

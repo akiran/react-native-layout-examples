@@ -2,10 +2,12 @@ import React from "react";
 import { View, StyleSheet } from "react-native";
 import Box from "../../helpers/Box";
 
-export default class Centering extends React.Component {
+export default class FlexDirection extends React.Component {
   render() {
     return (
       <View style={styles.container}>
+        <Box backgroundColor="teal" />
+        <Box backgroundColor="aqua" />
         <Box backgroundColor="blue" />
       </View>
     );
@@ -15,7 +17,6 @@ export default class Centering extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: "center",
-    justifyContent: "center"
+    flexDirection: "row"
   }
 });

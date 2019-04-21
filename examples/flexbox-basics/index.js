@@ -1,10 +1,10 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
-import Link from "../../helpers/Link";
+import { View, StyleSheet } from "react-native";
 import { createAppContainer, createStackNavigator } from "react-navigation";
+import Link from "../../helpers/Link";
 import Centering from "./Centering";
 
-class FlexboxBasics extends React.Component {
+export default class FlexboxBasics extends React.Component {
   static navigationOptions = {
     drawerLabel: "FlexboxBasics"
   };
@@ -14,23 +14,12 @@ class FlexboxBasics extends React.Component {
     } = this.props;
     return (
       <View style={styles.container}>
+        <Link onPress={() => navigate("FlexDirection")}>FlexDirection</Link>
         <Link onPress={() => navigate("Centering")}>Centering</Link>
       </View>
     );
   }
 }
-
-const FlexboxBasicsStack = createStackNavigator(
-  {
-    FlexboxBasics,
-    Centering
-  },
-  {
-    initialRouteName: "FlexboxBasics"
-  }
-);
-
-export default createAppContainer(FlexboxBasicsStack);
 
 const styles = StyleSheet.create({
   container: {
