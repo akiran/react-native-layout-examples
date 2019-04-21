@@ -1,11 +1,12 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
+import Box from "../../helpers/Box";
 
 export default class Centering extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Centering route</Text>
+        <Box />
       </View>
     );
   }
@@ -13,6 +14,8 @@ export default class Centering extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center"
   }
 });
